@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<title>Test TTS Voices | Special iApps</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="copyright" content="(C) 2023 Special iApps C.I.C." />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover" />
+<link rel="stylesheet" href="css/test-tts-voices.css" />
+<script src="js/test-tts-voices.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Test TTS Voices</h1>
+  <p>This page tests the text-to-speech (TTS) voices available for use from
+  JavaScript by web pages and web apps.</p>
+  <p>It uses the SpeechSynthesis interface of the <a
+  href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis">
+  Web Speech API</a>, which is supported by all modern browsers.</p>
+</header>
+
+<main>
+  <section id="langSection">
+    <h2>Select a Language:</h2>
+    <select id="langMenu"></select>
+  </section>
+  <section id="voiceSection">
+    <h2>Select a Voice:</h2>
+    <select id="voiceMenu"></select>
+  </section>
+  <section id="textSection">
+    <h2>Enter Text to Speak:</h2>
+    <input id="textToSpeak" type="text" spellcheck="false" autocorrect="off" />
+    <p>Leave text blank to speak name and language of voice.</p>
+  </section>
+  <section id="buttonSection">
+    <button id="speakButton">Speak</button>
+    <button id="clearButton">Clear</button>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2023 Special iApps C.I.C. MIT License.</p>
+</footer>
+
+</body>
+</html>
