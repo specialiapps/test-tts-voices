@@ -1,0 +1,65 @@
+/*
+ * Test TTS Voices
+ * 
+ * (C) 2023 Special iApps C.I.C. MIT License.
+ *
+ * Styles for page that tests the text-to-speech (TTS) voices available
+ * for use from JavaScript by web pages and web apps.
+ *
+ * It uses the SpeechSynthesis interface of the Web Speech API, which is
+ * supported by all modern browsers:
+ *
+ * https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis
+ */
+
+body{
+    --main-width:40%;
+    --spacing: 10px;
+}
+body, select, option, input {
+    box-sizing:border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+h1 {
+    font-size: 16px;
+}
+h2 {
+    font-size: 13px;
+    font-weight: normal;
+}
+header, footer {
+    float: left;
+    clear: left;
+    max-width: 50%;
+}
+main {
+    float: right;
+    padding: var(--spacing) var(--spacing) var(--spacing);
+    margin-left: var(--spacing);
+    border: 1px solid black;
+    width: var(--main-width);
+    display: inline-block;
+}
+select, input {
+    width: 100%;
+}
+option{
+    height:12px !important;
+}
+button{
+    margin-right:10px;
+}
+section:not(.enabled) {
+    pointer-events: none;
+    filter: opacity(50%);
+}
+@media screen and (max-width: 480px) {
+    body {
+        --main-width: calc(100% - 4 * var(--spacing));
+    }
+    header, main, footer {
+        max-width: 100%;
+        float: none;
+    }
+}
